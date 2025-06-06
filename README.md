@@ -1,2 +1,2 @@
-# personal-website-1
+# personal-website
 Person Website
