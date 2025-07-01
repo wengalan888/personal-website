@@ -2,14 +2,14 @@
   "projects": [
     {
       "name": "Lethal Company Mods Development",
-      "description": "Developed popular mods for Lethal Company, including DessertsAndCandies and DinoNuggetScrap. Created 3D models and implemented game mechanics, achieving 5,000+ downloads per mod and contributing to 134,671+ total downloads.",
+      "description": "Developed popular mods for Lethal Company, including DessertsAndCandies and DinoNuggetScrap. Created 3D models and implemented models into the game, achieving 5,000+ downloads and contributing to 130,000+ total downloads.",
       "techs": ["Unity", "3D Modeling", "C#", "Game Development", "Version Control"],
       "topics": ["Game Modding", "3D Modeling", "Open Source", "Community Development", "Asset Creation"],
       "link": "https://github.com/LCOS-Lethal-Company-Open-Source",
       "image": null
     },
     {
-      "name": "CitrusMobile - Note Taking App",
+      "name": "Citrus Notes Mobile - Note Taking App",
       "description": "Built a full-stack mobile app for note-taking and document management using Expo and FastAPI. Features include document scanning, file management, and secure authentication, with MongoDB storage and OpenCV integration.",
       "techs": ["React Native", "Expo", "FastAPI", "MongoDB", "OpenCV", "Python", "JavaScript", "Redux"],
       "topics": ["Mobile Development", "Full Stack", "Document Processing", "Authentication", "Database Design"],
