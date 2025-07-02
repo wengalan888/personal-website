@@ -6,7 +6,23 @@
       "techs": ["Unity", "3D Modeling", "C#", "Game Development", "Version Control"],
       "topics": ["Game Modding", "3D Modeling", "Open Source", "Community Development", "Asset Creation"],
       "link": "https://github.com/LCOS-Lethal-Company-Open-Source",
+      "image": "assets/images/lethal-company-mods.png"
+    },
+    {
+      "name": "RCPC Website Development",
+      "description": "Contributed to Rensselaer Competitive Programming Club's website using MERN stack, focusing on frontend development and UI/UX design for the competitive programming community.",
+      "techs": ["React", "Node.js", "Express", "MongoDB", "JavaScript", "CSS", "HTML"],
+      "topics": ["Web Development", "Full Stack", "Team Collaboration", "UI/UX Design"],
+      "link": "https://github.com/Rensselaer-Competitive-Programming-Club/RCPC-Website-Dev",
       "image": null
+    },
+    {
+      "name": "Personal Portfolio Website (This Website)",
+      "description": "Designed and developed a personal portfolio website using Figma, HTML, CSS, and JavaScript to showcase projects, skills, and experiences.",
+      "techs": ["Figma", "HTML", "CSS", "JavaScript"],
+      "topics": ["Web Development", "UI/UX Design", "Frontend Development"],
+      "link": "https://wengalan.com",
+      "image": "assets/images/personal-website.png"
     },
     {
       "name": "Citrus Notes Mobile - Note Taking App",
@@ -25,28 +41,12 @@
       "image": null
     },
     {
-      "name": "RCPC Website Development",
-      "description": "Contributed to Rensselaer Competitive Programming Club's website using MERN stack, focusing on frontend development and UI/UX design for the competitive programming community.",
-      "techs": ["React", "Node.js", "Express", "MongoDB", "JavaScript", "CSS", "HTML"],
-      "topics": ["Web Development", "Full Stack", "Team Collaboration", "UI/UX Design"],
-      "link": "https://github.com/Rensselaer-Competitive-Programming-Club/RCPC-Website-Dev",
-      "image": null
-    },
-    {
-      "name": "Personal Portfolio Website (This Website)",
-      "description": "Designed and developed a personal portfolio website using Figma, HTML, CSS, and JavaScript to showcase projects, skills, and experiences.",
-      "techs": ["Figma", "HTML", "CSS", "JavaScript"],
-      "topics": ["Web Development", "UI/UX Design", "Frontend Development"],
-      "link": "https://wengalan888.github.io/personal-website/",
-      "image": null
-    },
-    {
       "name": "Image Stitching and Panorama Creation with SIFT, RANSAC, and Homography",
       "description": "(Course Project) Implemented image stitching and panorama creation using classical computer vision techniques including SIFT, RANSAC, and homography estimation.",
       "techs": ["Python", "OpenCV", "NumPy", "Matplotlib"],
       "topics": ["Computer Vision", "Image Processing", "Feature Detection", "Feature Matching"],
       "link": null,
-      "image": null
+      "image": "assets/images/image-stitching.jpg"
     },
     {
       "name": "Image Classification and Feature Extraction with Objects and Scenes",

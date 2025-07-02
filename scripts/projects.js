@@ -17,8 +17,11 @@ function createProjectCards(projects) {
     const card = document.createElement("div");
     card.className = "project-card";
     card.innerHTML = `
-      <div class="image-placeholder">
-        <!-- Project image will go here -->
+      <div class="image-placeholder ${!project.image ? 'no-image' : ''}">
+        ${project.image 
+          ? `<img src="${project.image}" alt="${project.name}" onerror="this.style.display='none'">`
+          : '<!-- Project image will go here -->'
+        }
       </div>
       <h3>${project.name}</h3>
       <div class="overlay">
