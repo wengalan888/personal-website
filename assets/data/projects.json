@@ -1,20 +1,12 @@
 {
   "projects": [
     {
-      "name": "Lethal Company Mods Development",
-      "description": "Developed popular mods for Lethal Company, including DessertsAndCandies and DinoNuggetScrap. Created 3D models and implemented models into the game, achieving 5,000+ downloads and contributing to 130,000+ total downloads.",
-      "techs": ["Unity", "3D Modeling", "C#", "Game Development", "Version Control"],
-      "topics": ["Game Modding", "3D Modeling", "Open Source", "Community Development", "Asset Creation"],
-      "link": "https://github.com/LCOS-Lethal-Company-Open-Source",
-      "image": "assets/images/lethal-company-mods.png"
-    },
-    {
-      "name": "RCPC Website Development",
-      "description": "Contributed to Rensselaer Competitive Programming Club's website using MERN stack, focusing on frontend development and UI/UX design for the competitive programming community.",
-      "techs": ["React", "Node.js", "Express", "MongoDB", "JavaScript", "CSS", "HTML"],
-      "topics": ["Web Development", "Full Stack", "Team Collaboration", "UI/UX Design"],
-      "link": "https://github.com/Rensselaer-Competitive-Programming-Club/RCPC-Website-Dev",
-      "image": null
+      "name": "ResearchPi",
+      "description": "Developed a researcher discovery tool that helps students find professors for research opportunities. The application searches for researchers by author name, extracts and summarizes keywords using KeyBERT, and generates comprehensive researcher profiles including affiliation information using DeepSeek R1 LLM. This tool bridges the gap between students and potential research mentors by providing detailed insights into professors' expertise and research areas.",
+      "techs": ["Python", "KeyBERT", "DeepSeek R1", "LLM", "Natural Language Processing", "Web Scraping", "API Integration"],
+      "topics": ["Research Tools", "Academic Networking", "Natural Language Processing", "Machine Learning", "Education Technology"],
+      "link": "https://github.com/ResearchPi",
+      "image": "assets/images/researchpi_logo.png"
     },
     {
       "name": "Personal Portfolio Website (This Website)",
@@ -23,6 +15,14 @@
       "topics": ["Web Development", "UI/UX Design", "Frontend Development"],
       "link": "https://wengalan.com",
       "image": "assets/images/personal-website.png"
+    },
+    {
+      "name": "RCPC Website Development",
+      "description": "Contributed to Rensselaer Competitive Programming Club's website using MERN stack, focusing on frontend development and UI/UX design for the competitive programming community.",
+      "techs": ["React", "Node.js", "Express", "MongoDB", "JavaScript", "CSS", "HTML"],
+      "topics": ["Web Development", "Full Stack", "Team Collaboration", "UI/UX Design"],
+      "link": "https://github.com/Rensselaer-Competitive-Programming-Club/RCPC-Website-Dev",
+      "image": null
     },
     {
       "name": "Citrus Notes Mobile - Note Taking App",
@@ -39,6 +39,14 @@
       "topics": ["Image Processing", "Open Source", "Library Development", "Computer Vision"],
       "link": "https://github.com/CitrusNotes/CitrusPy",
       "image": null
+    },
+    {
+      "name": "Lethal Company Mods Development",
+      "description": "Developed popular mods for Lethal Company, including DessertsAndCandies and DinoNuggetScrap. Created 3D models and implemented models into the game, achieving 5,000+ downloads and contributing to 130,000+ total downloads.",
+      "techs": ["Unity", "3D Modeling", "C#", "Game Development", "Version Control"],
+      "topics": ["Game Modding", "3D Modeling", "Open Source", "Community Development", "Asset Creation"],
+      "link": "https://github.com/LCOS-Lethal-Company-Open-Source",
+      "image": "assets/images/lethal-company-mods.png"
     },
     {
       "name": "Image Stitching and Panorama Creation with SIFT, RANSAC, and Homography",
