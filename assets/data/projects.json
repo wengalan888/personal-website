@@ -2,10 +2,10 @@
   "projects": [
     {
       "name": "ResearchPi",
-      "description": "Developed a researcher discovery tool that helps students find professors for research opportunities. The application searches for researchers by author name, extracts and summarizes keywords using KeyBERT, and generates comprehensive researcher profiles including affiliation information using DeepSeek R1 LLM. This tool bridges the gap between students and potential research mentors by providing detailed insights into professors' expertise and research areas.",
-      "techs": ["Python", "KeyBERT", "DeepSeek R1", "LLM", "Natural Language Processing", "Web Scraping", "API Integration"],
-      "topics": ["Research Tools", "Academic Networking", "Natural Language Processing", "Machine Learning", "Education Technology"],
-      "link": "https://github.com/ResearchPi",
+      "description": "AI-powered academic research analysis tool that collects papers from 5 academic databases (arXiv, PubMed, DOAJ, Zenodo, Crossref), extracts keywords using KeyBERT NLP, classifies research fields using DeepSeek R1 LLM, and generates comprehensive researcher profiles in structured JSON format. The tool bridges the gap between students and potential research mentors by providing detailed insights into professors' expertise, research areas, and publication history.",
+      "techs": ["Python", "KeyBERT", "DeepSeek R1", "NLP", "API Integration", "JSON Processing", "Academic Databases", "Research Analysis"],
+      "topics": ["Natural Language Processing", "Machine Learning", "Data Mining", "AI Analysis"],
+      "link": "https://github.com/ResearchPi/ResearchPi",
       "image": "assets/images/researchpi_logo.png"
     },
     {
