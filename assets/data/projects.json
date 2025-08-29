@@ -3,8 +3,8 @@
     {
       "name": "ResearchPi",
       "description": "AI-powered academic research analysis tool that collects papers from 5 academic databases (arXiv, PubMed, DOAJ, Zenodo, Crossref), extracts keywords using KeyBERT NLP, classifies research fields using DeepSeek R1 LLM, and generates comprehensive researcher profiles in structured JSON format. The tool bridges the gap between students and potential research mentors by providing detailed insights into professors' expertise, research areas, and publication history.",
-      "techs": ["Python", "KeyBERT", "DeepSeek R1", "NLP", "API Integration", "JSON Processing", "Academic Databases", "Research Analysis"],
-      "topics": ["Natural Language Processing", "Machine Learning", "Data Mining", "AI Analysis"],
+      "techs": ["Python", "API Integration"],
+      "topics": ["Natural Language Processing", "Machine Learning", "Data Mining"],
       "link": "https://github.com/ResearchPi/ResearchPi",
       "image": "assets/images/researchpi_logo.png"
     },
@@ -18,26 +18,18 @@
     },
     {
       "name": "RCPC Website Development",
-      "description": "Contributed to Rensselaer Competitive Programming Club's website using MERN stack, focusing on frontend development and UI/UX design for the competitive programming community.",
+      "description": "(Under Reconstruction and Rebranding) Contributed to Rensselaer Competitive Programming Club's website using MERN stack, focusing on frontend development and UI/UX design for the competitive programming community.",
       "techs": ["React", "Node.js", "Express", "MongoDB", "JavaScript", "CSS", "HTML"],
       "topics": ["Web Development", "Full Stack", "Team Collaboration", "UI/UX Design"],
       "link": "https://github.com/Rensselaer-Competitive-Programming-Club/RCPC-Website-Dev",
       "image": null
     },
     {
-      "name": "Citrus Notes Mobile - Note Taking App",
+      "name": "Citrus Notes Mobile",
       "description": "Built a full-stack mobile app for note-taking and document management using Expo and FastAPI. Features include document scanning, file management, and secure authentication, with MongoDB storage and OpenCV integration.",
       "techs": ["React Native", "Expo", "FastAPI", "MongoDB", "OpenCV", "Python", "JavaScript", "Redux"],
-      "topics": ["Mobile Development", "Full Stack", "Document Processing", "Authentication", "Database Design"],
+      "topics": ["Mobile Development", "Full Stack", "Authentication", "Database Design"],
       "link": "https://github.com/CitrusNotes/CitrusMobile",
-      "image": null
-    },
-    {
-      "name": "CitrusPy - Image Processing Library",
-      "description": "Contributed to an open-source Python library for image processing, creating reusable functions for common image manipulation tasks.",
-      "techs": ["Python", "OpenCV", "NumPy", "PIL", "Unit Testing"],
-      "topics": ["Image Processing", "Open Source", "Library Development", "Computer Vision"],
-      "link": "https://github.com/CitrusNotes/CitrusPy",
       "image": null
     },
     {
