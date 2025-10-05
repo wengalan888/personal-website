@@ -1,12 +1,36 @@
 {
   "projects": [
     {
+      "name": "Supply Chain Negotiation Simulation (Undergraduate Research)",
+      "description": "Developing a web-based educational simulation that uses Generative AI agents to teach supply chain contracting and negotiation. Designed multi-player architecture, AI prompting framework for adaptive negotiation styles, and instructor analytics dashboard for performance tracking.",
+      "techs": ["Python", "Generative AI", "FastAPI", "Game Design", "Web Development"],
+      "topics": ["AI in Education", "Simulation Design", "Supply Chain Management", "Human-AI Interaction"],
+      "link": null,
+      "image": "assets/images/supplychain-simulation.png"
+    },
+    {
       "name": "ResearchPi",
-      "description": "AI-powered academic research analysis tool that collects papers from 5 academic databases (arXiv, PubMed, DOAJ, Zenodo, Crossref), extracts keywords using KeyBERT NLP, classifies research fields using DeepSeek R1 LLM, and generates comprehensive researcher profiles in structured JSON format. The tool bridges the gap between students and potential research mentors by providing detailed insights into professors' expertise, research areas, and publication history.",
+      "description": "AI-powered academic research analysis tool that collects papers from 5 academic databases (arXiv, PubMed, DOAJ, Zenodo, Crossref), extracts keywords using KeyBERT NLP, classifies research fields using DeepSeek R1 LLM, and generates structured researcher profiles.",
       "techs": ["Python", "API Integration"],
       "topics": ["Natural Language Processing", "Machine Learning", "Data Mining"],
       "link": "https://github.com/ResearchPi/ResearchPi",
       "image": "assets/images/researchpi_logo.png"
+    },
+    {
+      "name": "Citrus Notes Mobile",
+      "description": "Full-stack mobile app for note-taking and document management using Expo and FastAPI. Features document scanning, file management, and secure authentication, with MongoDB storage and OpenCV integration.",
+      "techs": ["React Native", "Expo", "FastAPI", "MongoDB", "OpenCV", "Python", "Redux"],
+      "topics": ["Mobile Development", "Full Stack", "Authentication", "Database Design"],
+      "link": "https://github.com/CitrusNotes/CitrusMobile",
+      "image": null
+    },
+    {
+      "name": "RCPC Website Development",
+      "description": "Contributed to Rensselaer Competitive Programming Club's website using MERN stack, focusing on frontend development, UI/UX design, and open-source collaboration.",
+      "techs": ["React", "Node.js", "Express", "MongoDB", "JavaScript", "CSS", "HTML"],
+      "topics": ["Web Development", "Full Stack", "UI/UX Design", "Team Collaboration"],
+      "link": "https://github.com/Rensselaer-Competitive-Programming-Club/RCPC-Website-Dev",
+      "image": null
     },
     {
       "name": "Personal Portfolio Website (This Website)",
@@ -17,60 +41,20 @@
       "image": "assets/images/personal-website.png"
     },
     {
-      "name": "RCPC Website Development",
-      "description": "(Under Reconstruction and Rebranding) Contributed to Rensselaer Competitive Programming Club's website using MERN stack, focusing on frontend development and UI/UX design for the competitive programming community.",
-      "techs": ["React", "Node.js", "Express", "MongoDB", "JavaScript", "CSS", "HTML"],
-      "topics": ["Web Development", "Full Stack", "Team Collaboration", "UI/UX Design"],
-      "link": "https://github.com/Rensselaer-Competitive-Programming-Club/RCPC-Website-Dev",
+      "name": "Object Detection with Region-based CNNs (RCNN)",
+      "description": "(Course Project) Implemented a region-based CNN for object detection using a modified ResNet-18 backbone, achieving strong accuracy in object classification and localization.",
+      "techs": ["Python", "PyTorch", "torchvision", "NumPy", "PIL"],
+      "topics": ["Computer Vision", "Deep Learning", "Object Detection", "CNN"],
+      "link": null,
       "image": null
-    },
-    {
-      "name": "Citrus Notes Mobile",
-      "description": "Built a full-stack mobile app for note-taking and document management using Expo and FastAPI. Features include document scanning, file management, and secure authentication, with MongoDB storage and OpenCV integration.",
-      "techs": ["React Native", "Expo", "FastAPI", "MongoDB", "OpenCV", "Python", "JavaScript", "Redux"],
-      "topics": ["Mobile Development", "Full Stack", "Authentication", "Database Design"],
-      "link": "https://github.com/CitrusNotes/CitrusMobile",
-      "image": null
-    },
-    {
-      "name": "Lethal Company Mods Development",
-      "description": "Developed popular mods for Lethal Company, including DessertsAndCandies and DinoNuggetScrap. Created 3D models and implemented models into the game, achieving 5,000+ downloads and contributing to 130,000+ total downloads.",
-      "techs": ["Unity", "3D Modeling", "C#", "Game Development", "Version Control"],
-      "topics": ["Game Modding", "3D Modeling", "Open Source", "Community Development", "Asset Creation"],
-      "link": "https://github.com/LCOS-Lethal-Company-Open-Source",
-      "image": "assets/images/lethal-company-mods.png"
     },
     {
       "name": "Image Stitching and Panorama Creation with SIFT, RANSAC, and Homography",
       "description": "(Course Project) Implemented image stitching and panorama creation using classical computer vision techniques including SIFT, RANSAC, and homography estimation.",
       "techs": ["Python", "OpenCV", "NumPy", "Matplotlib"],
-      "topics": ["Computer Vision", "Image Processing", "Feature Detection", "Feature Matching"],
+      "topics": ["Computer Vision", "Image Processing", "Feature Detection"],
       "link": null,
       "image": "assets/images/image-stitching.jpg"
-    },
-    {
-      "name": "Image Classification and Feature Extraction with Objects and Scenes",
-      "description": "(Course Project) Developed image classification systems using both classical (HOG, Bag-of-Words) and deep learning approaches for object and scene recognition.",
-      "techs": ["Python", "Scikit-learn", "NumPy", "Matplotlib", "Jupyter Notebook", "OpenCV"],
-      "topics": ["Computer Vision", "Machine Learning", "Deep Learning", "Image Processing", "Feature Extraction"],
-      "link": null,
-      "image": null
-    },
-    {
-      "name": "Object Detection with Region-based CNNs (RCNN)",
-      "description": "(Course Project) Implemented a region-based CNN for object detection using a modified ResNet-18 backbone, achieving strong accuracy in object classification and localization.",
-      "techs": ["Python", "PyTorch", "torchvision", "NumPy", "PIL", "Jupyter Notebook"],
-      "topics": ["Computer Vision", "Deep Learning", "Object Detection", "CNN", "Model Evaluation"],
-      "link": null,
-      "image": null
-    },
-    {
-      "name": "Motion Segmentation and Independent Object Detection in Video Segments",
-      "description": "(Course Project) Developed a system to detect and segment independently moving objects in video by distinguishing camera motion from object motion using feature tracking and clustering.",
-      "techs": ["Python", "OpenCV", "NumPy", "Matplotlib", "scikit-learn", "Jupyter Notebook"],
-      "topics": ["Computer Vision", "Motion Segmentation", "Optical Flow", "Feature Tracking", "Clustering", "Image Processing"],
-      "link": null,
-      "image": null
     }
   ]
 }
