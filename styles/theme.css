@@ -1,124 +1,44 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('../assets/font/Roboto/static/Roboto-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/font/Roboto/static/Roboto-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/font/Roboto/static/Roboto-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/font/Roboto/static/Roboto-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/font/Roboto/static/Roboto-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/font/Roboto/static/Roboto-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/font/Roboto/static/Roboto-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/font/Roboto/static/Roboto-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/font/Roboto/static/Roboto-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/font/Roboto/static/Roboto-BoldItalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-  }
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/font/Roboto/static/Roboto-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/font/Roboto/static/Roboto-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-  }
-
-:root {
-    /* Color palette */
-    --accent-color: #8CCBFB;
-    --accent-color-light: #f1f8ff;
-    --accent-color-dark: #66AFFB;
-    --accent-color-darker-light: #005188;
-    --accent-color-darker: #002f62;
-    --complement-color-yellow: #F9D988;
-    --complement-color-orange: #FBBC8C;
-    --complement-color-red: #F98888;
-    --neutral-color: #c8c8c8;
-    --black-color: #2B2B2B;
-    --white-color: #ffffff;
-    --gray-color: #888888;
-    
-    /* Typography */
-    --text-primary: #2B2B2B;
-    --text-secondary: #7f7f7f;
-    --text-light: #888888;
-    --font-family: 'Roboto', Arial, sans-serif;
-    --font-size-xs: 0.75rem;
-    --font-size-sm: 0.875rem;
-    --font-size-md: 1rem;
-    --font-size-lg: 1.25rem;
-    --font-size-xl: 1.5rem;
-    --font-size-2xl: 2rem;
-    --font-weight-light: 300;
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
-    --font-weight-black: 900;
-    
-    /* Spacing */
-    --spacing-xs: 0.25rem;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 1.5rem;
-    --spacing-xl: 2rem;
-    --spacing-2xl: 3rem;
-    --spacing-3xl: 4rem;
-    
-    /* Border radius */
-    --border-radius-sm: 0.25rem;
-    --border-radius-md: 0.5rem;
-    --border-radius-lg: 1rem;
-
-    /* Shadows */
+:root { 
+  --font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif; 
+  --primary-blue: #080357; /* darker blue (default) */
+  --accent-color: #4392f1; /* lighter blue used as accent */
+  --link-color: var(--primary-blue);
+  --link-hover: var(--accent-color);
+  --bg-soft: rgba(67,146,241,0.03);
 }
 
+* { 
+  font-family: var(--font-family); 
+  box-sizing: border-box; 
+}
 
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  /* slightly bolder and darker body copy for better contrast */
+  font-weight: 500;
+  color: #222; /* stronger than very light grey */
+}
+
+/* Global link colors */
+a { color: var(--link-color); text-decoration: underline; }
+a:hover, a:focus { color: var(--link-hover); }
