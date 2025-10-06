@@ -3,31 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Alan Weng</title>
+    <meta name="description" content="CS @ RPI | Software Engineering · Web Development · AI. Contact: wengalan888@gmail.com." />
+    <link rel="canonical" href="https://wengalan.com" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="author" content="Alan Weng" />
+
+    <!-- SEO -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Alan Weng" />
+    <meta property="og:description" content="CS @ RPI | Software Engineering · Web Development · AI" />
+    <meta property="og:url" content="https://wengalan.com/" />
+    <meta property="og:image" content="https://wengalan.com/assets/images/pfp.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Styling -->
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/theme.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/projects.css">
+
+    <!-- Preload hero image for LCP -->
+    <link rel="preload" as="image" href="assets/images/logo.png" imagesrcset="assets/images/logo.png 1x" />
+
+    <!-- JSON-LD: Person -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Alan Weng",
+        "jobTitle": "Computer Science Student, Undergraduate Researcher, and Software Developer",
+        "email": "mailto:wengalan888@gmail.com",
+        "url": "https://wengalan.com",
+        "image": "https://wengalan.com/assets/images/pfp.png",
+        "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Rensselaer Polytechnic Institute",
+        "url": "https://rpi.edu"
+        },
+        "sameAs": [
+        "https://github.com/wengalan888",
+        "https://linkedin.com/in/wengalan"
+        ],
+        "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+        }
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context":"https://schema.org",
+        "@type":"WebSite",
+        "name":"Alan Weng",
+        "url":"https://wengalan.com"
+    }
+    </script>
 </head>
 <body>
     <header id="header">
-        <nav>
-            <div class="logo">
-                <a href="index.html" title="Sup!">
-                    <img src="assets/images/logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="pages">
-                <a href="pages/experience.html" title="(WIP) My work experience!">Experience</a>
-                <a href="pages/projects.html" title="(WIP) Check out my projects!">Projects</a>
-                <a href="pages/about.html" title="(WIP) More about me!">About</a>
-            </div>
-        </nav>
+        <!-- Single Pager, not sure if I neet this -->
     </header>
 
+<<<<<<< Updated upstream
     <main>
         <!-- Hero -->
         <div class="hero">
@@ -72,22 +117,245 @@
                 <!-- Projects will be loaded here -->
             </div>
         </div>
+=======
+    <main id="main" role="main">
+        <!-- ABOUT -->
+        <section id="about" aria-label="About">
+            <img id="avatar" src="assets/images/pfp.png" alt="Portrait of Alan Weng"
+                width="128" height="128" loading="eager" fetchpriority="high"
+                style="border-radius:50%;" />
+            <h1 id="name"></h1>
+            <h3 id="label"></h3>
+            <p id="summary"></p>
+            <p id="links"></p>
+        </section>
+
+        <!-- EDUCATION -->
+        <!-- h2 Section Header -->
+        <!-- article Each Index of Education -->
+        <!-- h3 Institution -->
+        <!-- p Degree and dates -->
+        <!-- p GPA -->
+        <!-- p Coursework -->
+        <section id="education" aria-label="Education">
+            <h2>Education</h2>
+            <div id="education-list"></div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <!-- h2 Section Header -->
+        <!-- article Each Index of Experience -->
+        <!-- h3 Position title -->
+        <!-- p Organization (italic) and dates -->
+        <!-- p Summary sentence -->
+        <!-- <ul> / <li> bullet points -->
+        <section id="experience" aria-label="Experience">
+            <h2>Experience</h2>
+            <div id="experience-list"></div>
+        </section>
+
+        <!-- PROJECTS -->
+        <!-- h2 Section Header -->
+        <!-- article Each Index of Project -->
+        <!-- h3 Project title -->
+        <!-- p Dates -->
+        <!-- p Description -->
+        <!-- <ul> / <li> bullet points -->
+        <section id="projects" aria-label="Projects">
+            <h2>Projects</h2>
+            <div id="projects-list"></div>
+        </section>
+
+        <!-- SKILLS -->
+        <!-- h2 Section Header -->
+        <!-- article Each Index of Skills -->
+        <!-- h3 Skill category -->
+        <!-- p Keywords -->
+        <section id="skills" aria-label="Skills">
+            <h2>Skills</h2>
+            <div id="skills-list"></div>
+        </section>
+>>>>>>> Stashed changes
     </main>
 
     <footer id="footer">
         <div class="footer-content">
-            <h3>Feel free to email me or connect on LinkedIn!</h3>
+            <h3><strong>Feel free to email me or connect on <a href="https://www.linkedin.com/in/wengalan">LinkedIn</a>!</strong></h3>
             <a href="mailto:wengalan888@gmail.com" class="contact-button">Contact Me</a>
         </div>
         <div class="footer-bottom">
-            <div class="main-links">
-                <p>&copy; 2025 Alan Weng</p>
-                <span>•</span>
-                <a href="#header">Top of Page</a>
-            </div>
-            <a href='https://iconpacks.net/?utm_source=link-attribution&utm_content=112'>Iconpacks</a>
+            <p>&copy; 2025 Alan Weng</p>
+            <span>•</span>
+            <a href="#header">Top of Page</a>
         </div>
-    </footer>
-    <script src="scripts/projects.js"></script>
+    </footer> 
+    <script>
+        (async () => {
+            // Load portfolio data from JSON file
+            let data;
+            try {
+                const result = await fetch('./assets/data/portfolio.json', { cache: 'no-cache' });
+                if (!result.ok) throw new Error(`HTTP ${result.status} ${result.statusText}`);
+                data = await result.json();
+            } catch (err) {
+                console.error('Failed to load ./assets/data/portfolio.json', err);
+                const main = document.getElementById('main');
+                if (main) {
+                    main.innerHTML = `
+                    <p style="color:crimson">
+                        Error: could not load portfolio data. See console for details.
+                        You can view the <a href="assets/data/10.5Resume.pdf">resume PDF</a> instead.
+                    </p>`;
+                }
+                return;
+            }
+
+            const $ = (s, el = document) => el.querySelector(s);
+
+            // Format YYYY-MM → Mon YYYY
+            const fmtYM = s => {
+                if (!s) return 'Present';
+                const [y, m] = String(s).split('-');
+                const d = new Date(+y, (m || 1) - 1);
+                return isNaN(d) ? s : d.toLocaleDateString(undefined, { month: 'short', year: 'numeric' });
+            };
+
+            const fill = (sel, val) => { const el = $(sel); if (el && val) el.textContent = val; };
+
+            // ── BASICS (hero, left/right) ────────────────────────────────────────────────
+            const b = data.basics || {};
+            const about = document.getElementById('about');
+
+            // Resolve avatar (fallback to your local asset if basics.image not set)
+            const avatarSrc = b.image || 'assets/images/pfp.png';
+
+            // Build social links: prefer portfolio.json profiles; fall back to your handles
+            const socials = {
+                GitHub:  'https://github.com/wengalan888',
+                LinkedIn: 'https://www.linkedin.com/in/wengalan',
+                YouTube: 'https://www.youtube.com/@wengalan'
+            };
+            (b.profiles || []).forEach(p => {
+                const net = String(p.network || '').toLowerCase();
+                if (net === 'github') socials.GitHub = p.url || socials.GitHub;
+                if (net === 'linkedin') socials.LinkedIn = p.url || socials.LinkedIn;
+                if (net === 'youtube') socials.YouTube = p.url || socials.YouTube;
+            });
+
+            // Build markup
+            if (about) {
+                about.innerHTML = `
+                <div class="hero">
+                    <div class="hero-left">
+                        <img id="avatar" src="${avatarSrc}" alt="Portrait of ${b.name || 'Profile'}"
+                            width="128" height="128" loading="eager" fetchpriority="high"
+                            style="border-radius:50%;"/>
+                        <h1>${b.name || ''}</h1>
+                        <h3>${b.label || ''}</h3>
+                    </div>
+
+                    <div class="hero-right">
+                        ${b.summary ? `<p>${b.summary}</p>` : ''}
+
+                        <p>
+                            <strong>Contact:</strong>
+                            ${b.email ? `<a href="mailto:${b.email}">Email me</a>` : ''}
+                            ${b.email ? ' · ' : ''}<a href="./assets/data/10.5Resume.pdf" target="_blank" rel="noopener">Resume</a>
+                        </p>
+
+                        <p>
+                            <strong>Socials:</strong>
+                            <a href="${socials.GitHub}" target="_blank" rel="noopener">GitHub</a> ·
+                            <a href="${socials.LinkedIn}" target="_blank" rel="noopener">LinkedIn</a> ·
+                            <a href="${socials.YouTube}" target="_blank" rel="noopener">YouTube</a>
+                        </p>
+                    </div>
+                </div>`;
+            }
+
+            // ── EDUCATION (structured like résumé) ──────────────────────────────────────
+            const educationList = $('#education-list');
+            if (educationList) {
+                educationList.innerHTML = (data.education || []).map(e => {
+                    // Degree and dates placed together in a small inline container
+                    const metaLine = `<div class="edu-meta"><p class="degree"><em>${e.studyType} in ${e.area}</em></p><p class="dates">${fmtYM(e.startDate)} – ${fmtYM(e.endDate)}</p></div>`;
+
+                    // GPA line (if available)
+                    const gpaLine = e.score ? `<p><strong>GPA:</strong> ${e.score}</p>` : '';
+
+                    // Coursework
+                    const coursework = e.courses?.length
+                        ? `<p><strong>Relevant Coursework:</strong> ${e.courses.join(', ')}</p>`
+                        : '';
+
+                    // Institution italicized in HTML; degree and dates are separate lines
+                    return `
+                    <article>
+                        <h3><strong><em>${e.institution}</em></strong></h3>
+                        ${metaLine}
+                        ${gpaLine}
+                        ${coursework}
+                    </article>`;
+                }).join('');
+            }
+
+            // ── EXPERIENCE (position bold, org italic, bullets) ─────────────────────────
+            const experienceList = $('#experience-list');
+            if (experienceList) {
+                experienceList.innerHTML = (data.experience || []).map(x => {
+                    // Put dates on same line as the position/title; italicize organization name below
+                    const heading = `<h3 class="inline-title"><strong>${x.position}</strong><span class="dates">${fmtYM(x.startDate)} – ${fmtYM(x.endDate)}</span></h3>`;
+                    const orgLine = `<p><em>${x.name}</em></p>`;
+                    const summary = x.summary ? `<p>${x.summary}</p>` : '';
+                    // Highlights rendered as dash-prefixed paragraphs
+                    const bullets = x.highlights?.length
+                        ? `${x.highlights.map(h => `<p class="highlight">- ${h}</p>`).join('')}`
+                        : '';
+                    return `
+                    <article>
+                        ${heading}
+                        ${orgLine}
+                        ${summary}
+                        ${bullets}
+                    </article>`;
+                }).join('');
+            }
+
+            // ── PROJECTS (name bold/linked, dates italic, bullets) ──────────────────────
+            const projectsList = $('#projects-list');
+            if (projectsList) {
+                projectsList.innerHTML = (data.projects || []).map(p => {
+                    const title = p.url
+                        ? `<strong><a href="${p.url}" target="_blank" rel="noopener">${p.name}</a></strong>`
+                        : `<strong>${p.name}</strong>`;
+                    const dates = (p.startDate || p.endDate)
+                        ? `<span class="dates">${fmtYM(p.startDate)}${p.endDate ? ' – ' + fmtYM(p.endDate) : ''}</span>`
+                        : '';
+                    const desc = p.description ? `<p><em>${p.description}</em></p>` : '';
+                    const bullets = p.highlights?.length
+                        ? `${p.highlights.map(h => `<p class="highlight">- ${h}</p>`).join('')}`
+                        : '';
+                    return `
+                    <article>
+                        <h3 class="inline-title">${title}${dates}</h3>
+                        ${desc}
+                        ${bullets}
+                    </article>`;
+                }).join('');
+            }
+
+            // ── SKILLS (category headings, bold keywords) ───────────────────────────────
+            const skillsList = $('#skills-list');
+            if (skillsList) {
+                skillsList.innerHTML = (data.skills || []).map(s => `
+                    <article>
+                        <h3>${s.name}</h3>
+                        <p><strong>${(s.keywords || []).join(', ')}</strong></p>
+                    </article>
+                `).join('');
+            }
+        })();
+    </script>
+
 </body>
 </html> 

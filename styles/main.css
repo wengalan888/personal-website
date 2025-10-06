@@ -1,167 +1,194 @@
 @import 'theme.css';
 
-body {
-  position: relative;
+/* keep content centered with room on the side */
+
+main#main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    linear-gradient(45deg, var(--accent-color) 25%, transparent 25%),
-    linear-gradient(-45deg, var(--accent-color) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, var(--accent-color) 75%),
-    linear-gradient(-45deg, transparent 75%, var(--accent-color) 75%);
-  background-size: 160px 160px;
-  background-position: 0 0, 0 80px, 80px -80px, -80px 0px;
-  opacity: 0.0518;
-  z-index: -1;
+/* subtle page tint behind content */
+body {
+  background-color: var(--bg-soft);
 }
 
 .hero {
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 20vh);
-  margin-bottom: 20vh;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 0;
+  min-height: 60vh;
   width: 100%;
-  gap: var(--spacing-2xl);
+  flex-wrap: wrap; /* smaller screens */
 }
 
 .hero-left {
+  flex: 0 0 260px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-sm);
+  gap: 0.5rem;
+  text-align: center;
 }
 
 .hero-left img {
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  border: 5px solid var(--accent-color);
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.hero-left h3 {
-  color: var(--accent-color-dark);
+  padding: 6px;
+  margin-bottom: 6px;
+  object-fit: cover;
+  /* white border around the avatar */
+  border: 6px solid #fff;
+  /* keep the white border crisp around the rounded image */
+  background-clip: padding-box;
+  /* outward drop shadow (softened) */
+  box-shadow: 0 6px 18px rgba(4, 3, 87, 0.07);
 }
 
 .hero-right {
+  flex: 1 1 420px;
+  min-width: 220px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: var(--spacing-md);
-}
-
-.hero-right h1 {
-  align-self: center;
-  color: var(--accent-color-darker);
-}
-
-.hero-right h2 {
-  align-self: center;
-  color: var(--accent-color-dark);
-}
-
-.hero-buttons {
-  display: flex;
-  flex-direction: row;
-  gap: var(--spacing-sm);
-  position: relative;
-  z-index: 2;
-}
-
-.hero-buttons a {
-  border: 1.5px solid var(--accent-color-dark);
-  border-radius: var(--border-radius-sm);
-  padding: var(--spacing-sm) var(--spacing-md);
-  text-decoration: none;
-  color: var(--accent-color-dark);
-  font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-md);
-  transition: transform 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out, background-color 0.1s ease-in-out;
-  position: relative;
-}
-
-.hero-buttons a:hover {
-  color: var(--white-color);
-  background-color: var(--accent-color-dark);
-  cursor: pointer;
-  transform: scale(1.08);
-}
-
-.hero-socials {
-  display: flex;
-  flex-direction: row;
-  gap: var(--spacing-md);
-  position: relative;
-  z-index: 1;
-}
-
-.hero-socials img {
-  width: 35px;
-  height: 35px;
-  filter: invert(24%) sepia(98%) saturate(1552%) hue-rotate(190deg) brightness(150%) contrast(80%);
-  transition: transform 0.05s ease-in-out, filter 0.05s ease-in-out;
-}
-
-.hero-socials img:hover {
-  cursor: pointer;
-  transform: scale(1.08);
-  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(350deg) brightness(160%) contrast(90%);
-}
-
-.hero-socials a {
-  position: relative;
-}
-
-.hero-socials a::after {
-  content: attr(title);
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--black-color);
-  color: white;
-  padding: 5px 10px;
-  border-radius: var(--border-radius-sm);
-  font-size: var(--font-size-sm);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s ease-in-out;
-  white-space: nowrap;
-  z-index: 1000;
-}
-
-.hero-socials a:hover::after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.wip-message {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: calc(100vh - 20vh);
+  gap: 0.75rem;
   text-align: center;
-  gap: var(--spacing-md);
 }
 
-.wip-message h1 {
-  color: var(--accent-color-darker);
-  font-size: var(--font-size-2xl);
+/* smaller screens */
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    min-height: auto;
+    padding: 1.25rem 0;
+  }
+  .hero-left img {
+    width: 128px;
+    height: 128px;
+  }
 }
 
-.wip-message p {
-  color: var(--accent-color-dark);
-  font-size: var(--font-size-lg);
+/* section divider */
+section {
+  padding: 1.25rem 0;
+  border-top: 1px solid rgba(0,0,0,0.04);
 }
+
+/* Remove the divider above the hero/about section only */
+#about {
+  border-top: none;
+  padding-top: 0.5rem; /* slightly reduce top padding for the hero */
+}
+
+section h2 {
+  margin-bottom: 0.75rem;
+}
+
+/* ENTRY layout: make dates follow the title on the same line when possible */
+article {
+  margin-bottom: 1rem;
+}
+
+/* By default, headings inside articles are block-level. For entries like Experience/Projects
+   we display h3 inline so dates can sit beside titles; for Education we want separate lines.
+   We'll make h3 block by default and selectively keep inline where needed via .inline-title. */
+article h3 {
+  display: block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.35rem; /* ensure heading sits above following lines */
+}
+
+/* For entries that need title+date on same line (Projects & Experience) the renderer wraps
+   dates inside the h3 and keeps them inline; if inline behavior is needed you can add
+   class `inline-title` to h3 elements. */
+.inline-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Ensure the first paragraph in articles behaves as a block by default (education uses
+   separate degree/date lines). When the renderer intends inline behavior it will place
+   the content inside the h3 instead. */
+/* Make article paragraphs start on their own line by default */
+article > p {
+  display: block;
+  margin: 0.25rem 0 0 0;
+  color: #666;
+}
+
+/* The first-of-type will inherit the above; for inline title cases the renderer places
+   date elements inside the h3 so they remain on the same line as the title. */
+
+/* Dates that are output inline with titles */
+.dates {
+  color: #666;
+  font-size: 0.95rem;
+  display: inline-block;
+}
+
+/* Education meta: show degree and date on the same line */
+.edu-meta {
+  display: flex; /* full-width flex so date can be pushed to the right */
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: baseline;
+  width: 100%;
+}
+.edu-meta .degree { margin: 0; flex: 1 1 auto; }
+.edu-meta .dates { margin: 0; flex: 0 0 auto; }
+
+/* Ensure organization names in Experience are italicized (reset.css may neutralize <em>) */
+#experience article > p:first-of-type {
+  font-style: italic;
+  color: #444; /* slightly stronger than the grey used for other article metadata */
+}
+
+/* Ensure degree label in Education is italicized via class */
+#education .degree {
+  font-style: italic;
+  color: inherit;
+}
+
+/* Highlights rendered as simple dash-prefixed paragraphs */
+.highlight {
+  margin: 0.25rem 0 0 0;
+  padding-left: 0.25rem;
+  color: #333;
+}
+
+/* Subsequent paragraphs should behave as normal blocks */
+article > p + p,
+article ul {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* FOOTER: center content and present the bottom row as a single inline line */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-content {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.footer-bottom {
+  display: flex;
+  gap: 0.75rem; /* small space between items */
+  justify-content: center;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #444;
+}
+.footer-bottom a { color: inherit; color: #000;}
+.footer-bottom a:hover { color: var(--link-hover);}
+

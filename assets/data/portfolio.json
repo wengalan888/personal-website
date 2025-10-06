@@ -1,0 +1,130 @@
+{
+  "basics": {
+    "name": "Alan Weng",
+    "label": "CS @ RPI | Software Engineering",
+    "email": "wengalan888@gmail.com",
+    "phone": "518-256-9242",
+    "url": "https://wengalan.com",
+    "summary": "Computer Science Student and Undergraduate Researcher at Rensselaer Polytechnic Institute. Passionate about building meaningful and useful software.",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "wengalan888",
+        "url": "https://github.com/wengalan888"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "wengalan",
+        "url": "https://linkedin.com/in/wengalan"
+      }
+    ]
+  },
+
+  "education": [
+    {
+      "institution": "Rensselaer Polytechnic Institute",
+      "url": "https://rpi.edu",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2023-08",
+      "endDate": "2026-05",
+      "score": "3.74 GPA",
+      "courses": [
+        "Data Structures & Algorithms",
+        "Operating Systems",
+        "Network Programming",
+        "Software Design and Documentation",
+        "Deep Learning for NLP",
+        "Computational Vision"
+      ]
+    }
+  ],
+
+  "experience": [
+    {
+      "name": "Rensselaer Polytechnic Institute",
+      "position": "Undergraduate Research Assistant - Supply Chain Negotiation Simulation",
+      "startDate": "2025-09",
+      "endDate": "Present",
+      "summary": "Collaborating with faculty to design a web-based educational game that trains students in supply chain contracting and negotiation using Generative AI agents.",
+      "highlights": [
+        "Developed AI prompting framework for adaptive negotiation styles (risk-averse, collaborative, opportunistic)",
+        "Designed contract drafting, AI-driven strategies, event-driven market shifts, and trust/reputation scoring",
+        "Contributed ideas on learning objectives and alignment for educational research goals"
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "ResearchPi",
+      "description": "Researcher Profile Generator: Aggregates academic papers from multiple sources and creates profiles of researcher using NLP and LLM-based tagging.",
+      "startDate": "2025-05",
+      "endDate": "2025-08",
+      "url": "https://github.com/ResearchPi/ResearchPi",
+      "highlights": [
+        "Integrated five academic APIs (arXiv, PubMed, DOAJ, Zenodo, Crossref)",
+        "Implemented robust rate-limited fetching and retry strategies",
+        "Generated structured researcher summaries using KeyBERT and OpenRouter LLMs"
+      ]
+    },
+    {
+      "name": "Citrus Notes",
+      "description": "Full-stack mobile note app with document scanning and cloud file management.",
+      "startDate": "2025-01",
+      "endDate": "2025-04",
+      "url": "https://github.com/CitrusNotes/CitrusMobile",
+      "highlights": [
+        "Implemented document capture using OpenCV for edge detection and perspective correction",
+        "Developed REST API with FastAPI and MongoDB Atlas storage",
+        "Implemented robust fetching with try/except, request timeouts, per-provider rate limiting, and retries; added fallback query strategies (alternate names/IDs) to recover from failed or partial lookups"
+      ]
+    },
+    {
+      "name": "RPI Competitive Programming Club Website",
+      "description": "Official club website featuring events, resources, and board member profiles.",
+      "startDate": "2025-01",
+      "endDate": "Present",
+      "url": "https://github.com/Rensselaer-Competitive-Programming-Club/RCPC-Website-Dev",
+      "highlights": [
+        "Designed responsive frontend in HTML, CSS, and JavaScript",
+        "Led accessibility and UI/UX improvements through Figma mockups",
+        "Collaborated on GitHub for open-source development"
+      ]
+    },
+    {
+      "name": "Personal Portfolio Website",
+      "highlights": [
+        "Designed and developed personal website using HTML, CSS, and JavaScript to showcase projects and experience."
+      ],
+      "url": "https://wengalan.com"
+    },
+    {
+      "name": "Object Detection with Region-based CNNs (RCNN) -- Course Project",
+      "highlights": [
+        "Implemented RCNN object detection with a modified ResNet-18 backbone for classification and localization tasks."
+      ]
+    },
+    {
+      "name": "Image Stitching and Panorama Creation -- Course Project",
+      "highlights": [
+        "Built a computer vision pipeline for panorama stitching using SIFT, RANSAC, and homography estimation."
+      ]
+    }
+  ],
+
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": ["Python", "C++", "Java", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "name": "Frameworks & Tools",
+      "keywords": ["FastAPI", "MongoDB", "Git/GitHub", "Figma"]
+    },
+    {
+      "name": "Libraries",
+      "keywords": ["OpenCV", "NumPy", "Matplotlib", "PyTorch", "Keras"]
+    }
+  ]
+}
